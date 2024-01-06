@@ -3,6 +3,7 @@ import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 
 const logInController = async (req, res, next) => {
+    console.log(req.body);
     console.log(req.headers["user-agent"])
     let user = await User.findOne({
         where: {

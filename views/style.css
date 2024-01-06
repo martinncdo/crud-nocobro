@@ -1,15 +1,123 @@
-.grid-container {
-    display: grid;
-    grid-template-rows: 100px;
-    grid-template-columns: 25% 25% 25%;
-    grid-gap: 5px;
-    width: 100%;
+/* RESET CSS */
+
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.grid-container > * {
+*, 
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+    color: white;
+}
+
+.seccion-multimedia {
+    display: grid;
+    margin-bottom: auto;
+    margin-top: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 80vh;
+    background-color: rgb(195, 181, 208);
+    height: 100vh;
+    width: 100%;
+    padding: 1rem;
+}
+
+.tarjeta-entrevista, .tarjeta-videos {
     background-color: aliceblue;
     border: thin solid black;
     display: block;
-    margin: auto;
-    width: 33%;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.table-entrevistas {
+    border: thin solid black;
+}
+
+.first-row {
+    background-color: rgb(182, 153, 211);
+}
+
+.row-redes {
+    border: thin solid black;
+}
+
+.column-redes {
+    border: thin solid black;
+    padding: .4rem;
+}
+
+.titulo {
+    padding: 1rem;
+}
+
+.fecha {
+    padding: .2rem;
+}
+
+.descripcion {
+    padding: .5rem;
+}
+
+.link-youtube {
+    margin-bottom: 1rem;
+}
+
+/* NAVBAR */
+
+nav {
+    width: 100%;
+}
+
+ul {
+    display: flex;
+    background-color: aqua;
+    justify-content: flex-start;
+    padding: 1rem 0;
+}
+
+.navbar-a {
+    display: block;
+    color: black;
+    list-style: none;
+    background-color: rgb(199, 197, 201);
+    padding: 1rem;
+    margin-left: 1rem;
+}
+
+/* FIN NAVBAR */
+
+/* PAGINAS */
+
+.row-paginas {
+    background-color: blue;
+    padding: .5rem;
+}
+
+.pag {
+    color: black;
+    background-color: white;
+    padding: .2rem;
+}
+
+/* Formulario para añadir Entrevista */
+
+.form-entrevista {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-video {
+    display: flex;
+    flex-direction: column;
 }

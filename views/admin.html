@@ -4,22 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="prueba.css">
 </head>
 <body>
-    <h1>Dashboard del administrador</h1>
+    <nav>
+        <ul>
+            <button class="btn-entrevistas navbar-a">Entrevistas</button>
+            <button class="btn-videos navbar-a">Videos / Cortometrajes</button>
+            <button class="btn-añadir navbar-a">Añadir nuevo</button>
+        </ul>
+    </nav>
 
-    <button class="btn-read">Read</button>
-    <button>Crear</button>
-    <button>Editar</button>
-    <button>Eliminar</button>
+    <div class="row-paginas"></div>
 
-    <div class="grid-container">
-        <div class="grid-item1">1</div>
-        <div class="grid-item2">2</div>
-        <div class="grid-item3">3</div>
-        <div class="grid-item4">4</div>
-        <div class="grid-item5">5</div>
-        <div class="grid-item6">6</div>
-    </div>
+    <div class="seccion-multimedia"></div>
+
+    <template class="entrevista-template">
+        <div class="tarjeta-entrevista">
+            <h2 class="titulo"></h2>
+            <p class="fecha"></p>
+            <p class="descripcion"></p>
+        
+            <table class="table-entrevistas"></table>
+            <br>
+            <p></p>
+            <p class="link-youtube"></p>
+            <div class="botones"><button class="btn-deleteEntrevista">Eliminar</button></div>
+        </div>
+    </template>
+
+    <template class="videos-template">
+        <div class="tarjeta-videos">
+            <h2 class="usuario-instagram"></h2>
+            <table class="table-videos"></table>
+            <div class="botones"><button class="btn-deleteVideos">Eliminar</button></div>
+        </div>
+    </template>
+
+    <script src="prueba.js" type="module"></script>
 </body>
 </html>
