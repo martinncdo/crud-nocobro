@@ -1,0 +1,15 @@
+.grid-container {
+    display: grid;
+    grid-template-rows: 100px;
+    grid-template-columns: 25% 25% 25%;
+    grid-gap: 5px;
+    width: 100%;
+}
+
+.grid-container > * {
+    background-color: aliceblue;
+    border: thin solid black;
+    display: block;
+    margin: auto;
+    width: 33%;
+}
