@@ -48,7 +48,7 @@ document.addEventListener("click", (e) => {
     // Primer click
     if (e.target.matches(".btn-entrevistas")) {
         $seccionMultimedia.innerHTML = "";
-        makePages(items, "http://192.168.0.177:8000/entrevistas");
+        makePages(items, "https://crud-nocobro.onrender.com/entrevistas");
         section = "entrevistas";
     };
 
@@ -91,7 +91,7 @@ document.addEventListener("click", (e) => {
     // Tercer click
     if (e.target.matches(".btn-videos")){
       $seccionMultimedia.innerHTML = "";
-      makePages(items, "http://192.168.0.177:8000/videos");  
+      makePages(items, "https://crud-nocobro.onrender.com/videos");  
       section = "videos";
     };
 
@@ -199,7 +199,7 @@ document.addEventListener("submit", (e) => {
             };
         };
         let nombre_artista = e.target.titulo.value.split(" ");
-        let res = fetch("http://192.168.0.177:8000/entrevistas", {
+        let res = fetch("https://crud-nocobro.onrender.com/entrevistas", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -219,7 +219,7 @@ document.addEventListener("submit", (e) => {
 
     if (e.target.matches(".form-video")){
         e.preventDefault();
-        let res = fetch("http://192.168.0.177:8000/videos", {
+        let res = fetch("https://crud-nocobro.onrender.com/videos", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
