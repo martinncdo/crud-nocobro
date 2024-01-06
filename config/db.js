@@ -6,9 +6,9 @@ const sequelize = new Sequelize(process.env.DB_NAME, process.env.DB_USER, proces
     host: process.env.DB_HOST,
     dialect: "postgres",
     pool: {
-        max: 3,
+        max: 2,
         min: 0,
-        idle: 40000
+        idle: 900000
     }
 });
 
